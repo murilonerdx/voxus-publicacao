@@ -1,0 +1,31 @@
+<form>
+    <h1>CRIANDO NOVA PUBLICAÇÃO</h1>
+
+
+
+    <mat-form-field class="form">
+        <mat-label>Title</mat-label>
+        <input matInput [(ngModel)]="publicacao.title" type="text" name="title" placeholder="Digite o titulo" required>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Content</mat-label>
+        <textarea matInput [(ngModel)]="publicacao.content" type="text" name="content" placeholder="Digite o conteudo" required></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Date</mat-label>
+        <input matInput [(ngModel)]="publicacao.date" class="border rounded-pill border-white shadow-none" type="date" name="date" required/>
+    </mat-form-field>
+
+    
+    <mat-form-field class="form">
+        <mat-label>Tag</mat-label>
+        <textarea matInput [(ngModel)]="publicacao.tag" type="text" name="tag" placeholder="Digite a sua TAG" required></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary"> CRIAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

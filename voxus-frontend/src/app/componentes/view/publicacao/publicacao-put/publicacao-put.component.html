@@ -1,0 +1,26 @@
+<form>
+    <h1>ATUALIZANDO CATEGORIA</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Title</mat-label>
+        <input matInput [(ngModel)]="publicacao.title" type="text" name="title" placeholder="Digite novo titulo">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Content</mat-label>
+        <textarea matInput [(ngModel)]="publicacao.content" type="text" name="content" placeholder="Digite novo conteudo"></textarea>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Date</mat-label>
+        <textarea matInput [(ngModel)]="publicacao.date" type="date" name="date" placeholder="Digite a nova data"></textarea>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>TAGS</mat-label>
+        <textarea matInput [(ngModel)]="publicacao.tag" type="text" name="tag" placeholder="Digite as novas TAGS"></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()" class="mat-elevation-z8" mat-stroked-button color="primary"> ATUALIZAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>
