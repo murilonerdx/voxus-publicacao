@@ -49,7 +49,4 @@ public class PublicacaoService {
         obj.setTag(entity.getTag());
     }
 
-
-
-
 }
